@@ -1,0 +1,9 @@
+.UniversityCard {
+    box-shadow: -4px 12px 15px 4px rgba(0, 0, 0, 0.1);
+    padding: 50px 10px;
+    background-color: #fff;
+}
+
+.UniversityCard:last-child {
+    box-shadow: none;
+}

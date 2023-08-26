@@ -1,38 +1,193 @@
 .App {
   text-align: center;
+  padding: 20px;
+  background-color: rgb(246, 234, 234);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App p {
+  text-align: start;
+  font-weight: bold;
+  padding: 10px 0px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.App h4 {
+  text-align: start;
+  padding: 20px 10px;
+}
+
+
+
+.university-block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 12px;
+  grid-row-gap: 20px;
+}
+
+.mentors-block {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 12px;
+  grid-row-gap: 20px;
+}
+
+.advisor-block {
+  display: grid;
+
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 12px;
+  grid-row-gap: 20px;
+}
+
+@media screen and (min-width: 340px) and (max-width: 480px) {
+  .App {
+
+    padding: 20px;
+  }
+
+  .university-block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 12px;
+    grid-row-gap: 20px;
+  }
+
+  .advisor-block {
+    display: grid;
+
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 12px;
+    grid-row-gap: 20px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .App {}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .university-block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 12px;
+    grid-row-gap: 20px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .advisor-block {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 12px;
+    grid-row-gap: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .App {
+
+    padding: 40px;
+  }
+
+  .university-block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 12px;
+    grid-row-gap: 20px;
+  }
+
+  .mentors-block {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 12px;
+    grid-row-gap: 20px;
+  }
+
+  .advisor-block {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 12px;
+    grid-row-gap: 20px;
+  }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .App {
+
+    padding: 60px 60px;
+  }
+
+  .university-block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    grid-column-gap: 12px;
+    grid-row-gap: 20px;
+  }
+
+  .mentors-block {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 12px;
+    grid-row-gap: 20px;
+  }
+
+  .advisor-block {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 12px;
+    grid-row-gap: 20px;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  .App {
+
+    padding: 30px 100px;
+  }
+
+  .university-block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    grid-column-gap: 12px;
+    grid-row-gap: 20px;
+  }
+
+  .mentors-block {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 12px;
+    grid-row-gap: 20px;
+  }
+
+  .advisor-block {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 12px;
+    grid-row-gap: 20px;
   }
 }
